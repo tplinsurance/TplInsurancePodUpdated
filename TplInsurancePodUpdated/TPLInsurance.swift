@@ -12,7 +12,7 @@ open class TPLInsurance: NSObject {
 
     private(set) weak var delegate: TPLInsuranceDelegate? = nil
     
-    static let shared = TPLInsurance()
+    public static let shared = TPLInsurance()
     
     private override init() { }
     
