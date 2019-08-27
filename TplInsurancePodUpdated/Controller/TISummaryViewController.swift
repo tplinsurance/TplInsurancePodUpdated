@@ -145,7 +145,11 @@ extension TISummaryViewController: PagerViewDelegate {
                             
                             //                        self?.navigationController?.popViewController(animated: true)
                             var quoteId = String(describing: self?.api.TIQuote![0].quote_Id)
-                            let controller = self?.storyboard?.instantiateViewController(withIdentifier: "PaymentOptionsViewController") as! PaymentOptionsViewController
+                            var amount = String(describing: self?.api.TIQuote![0].netPremium_NonFiler)
+                            
+                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
+                            self?.dismiss(animated: true, completion: nil)
+//                            let controller = self?.storyboard?.instantiateViewController(withIdentifier: "PaymentOptionsViewController") as! PaymentOptionsViewController
 //                            controller.myurl = "http://customer.tplinsurance.com/onlinesales_uat/PaymentMethod.aspx?Product_Id=\(quoteId ?? "")&Type=Travel&SalesFormNo=\(result ?? "")"
 //                            controller.apiTravel = self?.api
                             
@@ -154,7 +158,7 @@ extension TISummaryViewController: PagerViewDelegate {
 
                             
 //                            print("url passed is: \(controller.myurl)")
-                            self?.navigationController?.pushViewController(controller, animated: true)
+//                            self?.navigationController?.pushViewController(controller, animated: true)
                             
                         })
                         

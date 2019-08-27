@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class ViewController: SecondaryViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: SecondaryViewController, UITableViewDataSource, UITableViewDelegate {
     
     //    let InsuranceType = ["Car Insurance", "Mobile Insurance", "Home Insurance", "Travel Insurance"]
     let InsuranceType = ["Travel Insurance", "Home Insurance", "Car Insurance", "Travel2 Insurance", "Mobile Insurance"]

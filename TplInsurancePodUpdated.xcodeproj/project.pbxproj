@@ -59,6 +59,7 @@
 		F092D75C231503D1007CA6BB /* TISummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092D755231503D1007CA6BB /* TISummaryViewController.swift */; };
 		F092D75E23154DED007CA6BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092D75D23154DED007CA6BB /* ViewController.swift */; };
 		F092D76023154EE9007CA6BB /* InsuranceMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F092D75F23154EE9007CA6BB /* InsuranceMain.storyboard */; };
+		F092D79C23155B4D007CA6BB /* TPLInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092D79B23155B4D007CA6BB /* TPLInsurance.swift */; };
 		FCEEB5ECBD69C90017AD378A /* Pods_TplInsurancePodUpdated.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DE5A07BD6CE748421C8EEB /* Pods_TplInsurancePodUpdated.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +133,7 @@
 		F092D755231503D1007CA6BB /* TISummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TISummaryViewController.swift; sourceTree = "<group>"; };
 		F092D75D23154DED007CA6BB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F092D75F23154EE9007CA6BB /* InsuranceMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsuranceMain.storyboard; sourceTree = "<group>"; };
+		F092D79B23155B4D007CA6BB /* TPLInsurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPLInsurance.swift; sourceTree = "<group>"; };
 		F7306A1C1D0269683D9F9F18 /* Pods-TplInsurancePodUpdated.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TplInsurancePodUpdated.release.xcconfig"; path = "Pods/Target Support Files/Pods-TplInsurancePodUpdated/Pods-TplInsurancePodUpdated.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +210,7 @@
 				F092D6E0231501AA007CA6BB /* TplInsurancePodUpdated.h */,
 				F092D6E1231501AA007CA6BB /* Info.plist */,
 				F092D75F23154EE9007CA6BB /* InsuranceMain.storyboard */,
+				F092D79B23155B4D007CA6BB /* TPLInsurance.swift */,
 			);
 			path = TplInsurancePodUpdated;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				F092D7212315033C007CA6BB /* homeInsuranceModel.swift in Sources */,
 				F092D74E231503B8007CA6BB /* TravelPagerViewController.swift in Sources */,
 				F092D71523150321007CA6BB /* YSessionManager.swift in Sources */,
+				F092D79C23155B4D007CA6BB /* TPLInsurance.swift in Sources */,
 				F092D73223150345007CA6BB /* TIAgeSlabModel.swift in Sources */,
 				F092D70823150312007CA6BB /* TIConstant.swift in Sources */,
 				F092D72E23150345007CA6BB /* TravelPackageModel.swift in Sources */,
