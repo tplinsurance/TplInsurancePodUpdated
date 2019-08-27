@@ -11,7 +11,7 @@ s.summary = "A short description of TplInsurancePodUpdated."
 s.requires_arc = true
 
 # 2
-s.version = "0.0.1"
+s.version = "0.0.2"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
