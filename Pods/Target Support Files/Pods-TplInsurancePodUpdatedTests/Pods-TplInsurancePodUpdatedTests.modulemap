@@ -1,0 +1,6 @@
+framework module Pods_TplInsurancePodUpdatedTests {
+  umbrella header "Pods-TplInsurancePodUpdatedTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
