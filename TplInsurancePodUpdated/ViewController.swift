@@ -38,6 +38,29 @@ open class ViewController: SecondaryViewController, UITableViewDataSource, UITab
         
         
         // Do any additional setup after loading the view.
+        
+        self.navigationItem.setHidesBackButton(true, animated:true);
+        let newBackButton = UIBarButtonItem(title: "Exit", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.backCustom(sender:)))
+        self.navigationItem.leftBarButtonItem = newBackButton
+        
+    }
+    
+    @objc func backCustom(sender: UIBarButtonItem) {
+        
+        let cancelAlert = UIAlertController(title: "Exit", message: "Are you sure you want to quit from this process?", preferredStyle: UIAlertController.Style.alert)
+        
+        cancelAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        
+        cancelAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
+            
+            cancelAlert .dismiss(animated: true, completion: nil)
+            
+        }))
+        
+        present(cancelAlert, animated: true, completion: nil)
+        
     }
     
     open override func viewWillAppear(_ animated: Bool) {

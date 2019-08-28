@@ -12,7 +12,7 @@ class WebViewDialoge: UIView {
     @IBOutlet weak var btnDone: UIButton!
     
     class func instanceFromNib() -> WebViewDialoge {
-        return UINib(nibName: "WebViewDialoge", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! WebViewDialoge
+        return UINib(nibName: "WebViewDialoge", bundle: .framework).instantiate(withOwner: nil, options: nil)[0] as! WebViewDialoge
     }
  
 }

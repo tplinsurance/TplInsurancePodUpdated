@@ -60,6 +60,7 @@
 		F092D75E23154DED007CA6BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092D75D23154DED007CA6BB /* ViewController.swift */; };
 		F092D76023154EE9007CA6BB /* InsuranceMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F092D75F23154EE9007CA6BB /* InsuranceMain.storyboard */; };
 		F092D79C23155B4D007CA6BB /* TPLInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092D79B23155B4D007CA6BB /* TPLInsurance.swift */; };
+		F092D79E23166F84007CA6BB /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = F092D79D23166F84007CA6BB /* Resources */; };
 		FCEEB5ECBD69C90017AD378A /* Pods_TplInsurancePodUpdated.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DE5A07BD6CE748421C8EEB /* Pods_TplInsurancePodUpdated.framework */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +135,7 @@
 		F092D75D23154DED007CA6BB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F092D75F23154EE9007CA6BB /* InsuranceMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsuranceMain.storyboard; sourceTree = "<group>"; };
 		F092D79B23155B4D007CA6BB /* TPLInsurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPLInsurance.swift; sourceTree = "<group>"; };
+		F092D79D23166F84007CA6BB /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		F7306A1C1D0269683D9F9F18 /* Pods-TplInsurancePodUpdated.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TplInsurancePodUpdated.release.xcconfig"; path = "Pods/Target Support Files/Pods-TplInsurancePodUpdated/Pods-TplInsurancePodUpdated.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +203,7 @@
 		F092D6DF231501AA007CA6BB /* TplInsurancePodUpdated */ = {
 			isa = PBXGroup;
 			children = (
+				F092D79D23166F84007CA6BB /* Resources */,
 				F092D75D23154DED007CA6BB /* ViewController.swift */,
 				F092D6FB2315029C007CA6BB /* General */,
 				F092D6FA23150297007CA6BB /* Network */,
@@ -442,6 +445,7 @@
 			files = (
 				F092D76023154EE9007CA6BB /* InsuranceMain.storyboard in Resources */,
 				F092D73F23150382007CA6BB /* WebViewDialoge.xib in Resources */,
+				F092D79E23166F84007CA6BB /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
