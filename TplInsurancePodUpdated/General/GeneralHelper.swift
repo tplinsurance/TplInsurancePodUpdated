@@ -56,3 +56,37 @@ extension UIViewController {
         UIActivityIndicatorView().stopAnimating()
     }
 }
+
+/*
+ import UIKit
+ 
+ open class TPLInsurance: NSObject {
+ 
+ private(set) weak var delegate: TPLInsuranceDelegate? = nil
+ 
+ public static let shared = TPLInsurance()
+ 
+ private override init() { }
+ 
+ func openTPLInsurance(with controller: UIViewController, delegate: TPLInsuranceDelegate) {
+ self.delegate = delegate
+ presentInitialController(controller: controller)
+ }
+ 
+ private func presentInitialController(controller: UIViewController) {
+ let storyBoard : UIStoryboard = UIStoryboard(name: "InsuranceMain", bundle: .framework)
+ let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController")
+ let navigationController = UINavigationController(rootViewController: nextViewController)
+ controller.present(navigationController, animated:true, completion:nil)
+ }
+ 
+ }
+ 
+ protocol TPLInsuranceDelegate: class {
+ func userDidSubmittedInsurance(proposalId: String, amount: String)
+ }
+ 
+ extension Bundle {
+ static let framework = Bundle.init(identifier: "org.cocoapods.TplInsurancePodUpdated")
+ }
+ */

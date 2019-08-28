@@ -100,6 +100,8 @@ extension HISummaryViewController: PagerViewDelegate {
     func willMoveTo(next controller: UIViewController, completionHandler: @escaping (Bool) -> Void) {
         if checkbox.isSelected{
             self.showActivityIndicatory()
+
+            self.showActivityIndicatory()
             //MARK: - For Blocking user interaction
             UIApplication.shared.beginIgnoringInteractionEvents()
             //Open this
@@ -107,7 +109,7 @@ extension HISummaryViewController: PagerViewDelegate {
                 
                 DispatchQueue.main.async {
 //                    self.view.hideToastActivity()
-                    self.stopIndicator()
+                    self.showActivityIndicatory()
                     //MARK: - For Un-Blocking user interaction
                     UIApplication.shared.endIgnoringInteractionEvents()
                     //Open this
@@ -121,10 +123,13 @@ extension HISummaryViewController: PagerViewDelegate {
 //                            controller.myurl = "https://customer.tplinsurance.com:444/PaymentModel/CustomerDetail.aspx?Type=Home&SalesFormNo=\("result" ?? "")"
 //                            controller.apiHome = self!.api
                             print("url passed is: \(url)")
+//                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
+                            self?.dismiss(animated: true, completion: nil)
 //                            self?.navigationController?.pushViewController(controller, animated: true)
                             
                         })
-                        
+                        self.stopIndicator()
+
                         TIHelper.showAlert(ViewController: self, AlertTitle: "Request Submitted", AlertMessage: "Thank you for choosing TPL Insurance. Proposal number is : \(result). After successful payment your policy will be emailed to you within 24 hours. ", AlertStyle: .alert , Actions: [defaultAction])
                         //Open this
                     } else {

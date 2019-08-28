@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: SecondaryViewController, UITableViewDataSource, UITableViewDelegate {
+open class ViewController: SecondaryViewController, UITableViewDataSource, UITableViewDelegate {
     
     //    let InsuranceType = ["Car Insurance", "Mobile Insurance", "Home Insurance", "Travel Insurance"]
-    let InsuranceType = ["Travel Insurance", "Home Insurance", "Car Insurance", "Travel2 Insurance", "Mobile Insurance"]
-    let InsuranceDetails = ["Get peace of mind for wherever the road takes you", "Safe travels, we have got you covered", "All your protection under one roof", "Covering you for the unexpected", "Mobile Insurance"]
-    let InsuranceTypeImages = ["vehicle_claim", "home_insuranceLogo", "travel_claim", "travel_claim", "mobile_claim"]
-    let insuranceDialogDetails = ["1. Personal CNIC\n  2. Beneficiary CNIC\n  3. Beneficiary Address\n", "1. Personal CNIC\n  2. Tenant /  Landlord CNIC\n", "1. Personal CNIC\n 2. Engine # \n 3. Chasis No \n 4. Vehicle registration No\n" , "1. Mirror Screen Picture of Phone \n ,  Pic of box with IMEI , Pic of purchase receipt , Pic of CNIC"]
+    let InsuranceType = ["Travel Insurance", "Home Insurance"]
+    let InsuranceDetails = ["Get peace of mind for wherever the road takes you", "Safe travels, we have got you covered"]
+    let InsuranceTypeImages = ["vehicle_claim", "home_insuranceLogo"]
+    let insuranceDialogDetails = ["1. Personal CNIC\n  2. Beneficiary CNIC\n  3. Beneficiary Address\n", "1. Personal CNIC\n  2. Tenant /  Landlord CNIC\n"]
     let generalDialogDetail = "Please make sure you have the below information ready, while filling out the form:\n"
     
     //    let defaultAction = UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: { [weak self](action) in
