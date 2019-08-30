@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class ViewController: SecondaryViewController, UITableViewDataSource, UITableViewDelegate {
+open class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     //    let InsuranceType = ["Car Insurance", "Mobile Insurance", "Home Insurance", "Travel Insurance"]
     let InsuranceType = ["Travel Insurance", "Home Insurance"]
@@ -35,7 +35,6 @@ open class ViewController: SecondaryViewController, UITableViewDataSource, UITab
         dataTable.dataSource = self
         
         self.navigationItem.title = "Buy Insurance"
-        
         
         // Do any additional setup after loading the view.
         
@@ -111,12 +110,6 @@ open class ViewController: SecondaryViewController, UITableViewDataSource, UITab
                 self.performSegue(withIdentifier: "request qoute", sender: self)
             }else if self.InsuranceType[indexPath.row] == self.InsuranceType[1]{
                 self.performSegue(withIdentifier: "showHome", sender: self)
-            }else if self.InsuranceType[indexPath.row] == self.InsuranceType[2]{
-                self.performSegue(withIdentifier: "showTravel", sender: self)
-            }else if self.InsuranceType[indexPath.row] == self.InsuranceType[3]{
-                self.performSegue(withIdentifier: "showTravelNew", sender: self)
-            }else if self.InsuranceType[indexPath.row] == self.InsuranceType[4]{
-                self.performSegue(withIdentifier: "showMobile", sender: self)
             }
         }
         
