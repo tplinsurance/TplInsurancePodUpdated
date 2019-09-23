@@ -129,8 +129,7 @@ extension TISummaryViewController: PagerViewDelegate {
         if TISCheckboxLabel.isSelected{
             
             self.showActivityIndicatory()
-//            api.TIProposalApi()
-//            api.TIProposalApi(completionHandler: { (success,result) in
+
             var mobileNum = UserDefaults.standard.object(forKey: TIConstant.userMobileNoKey) as? String
             print("Mobile number from shared prefrences is: \(mobileNum)")
             let bList = "\(bName ?? "");\(bAddress ?? "");\(bCnic ?? "");\(bContact ?? "");\(bRelation ?? "");"
@@ -144,8 +143,8 @@ extension TISummaryViewController: PagerViewDelegate {
                         let defaultAction = UIAlertAction(title: "Continue payment", style: UIAlertAction.Style.default, handler: { [weak self](action) in
                             
                             //                        self?.navigationController?.popViewController(animated: true)
-                            var quoteId = String(describing: self?.api.TIQuote![0].quote_Id)
-                            var amount = String(describing: self?.api.TIQuote![0].netPremium_NonFiler)
+                            let quoteId = String(describing: self?.api.TIQuote![0].quote_Id)
+                            let amount = String(describing: self?.api.TIQuote![0].netPremium_NonFiler)
                             
                             TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
                             self?.dismiss(animated: true, completion: nil)

@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="Lyi-cP-Knm">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C2q-ZK-egg" customClass="ViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C2q-ZK-egg" customClass="ViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0G5-QJ-axj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
         <!--Travel Pager View Controller-->
         <scene sceneID="FQZ-5N-Zw1">
             <objects>
-                <viewController storyboardIdentifier="TravelPagerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5hH-IO-dQu" customClass="TravelPagerViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TravelPagerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5hH-IO-dQu" customClass="TravelPagerViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zU9-Yr-RD7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
         <!--Details1 View Controller-->
         <scene sceneID="GJe-Jo-Rj9">
             <objects>
-                <viewController storyboardIdentifier="TIDetails1ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eaM-7W-uDG" customClass="TIDetails1ViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TIDetails1ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eaM-7W-uDG" customClass="TIDetails1ViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0jY-u5-ZwA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,7 +147,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="2gq-bY-tBR">
                                 <rect key="frame" x="16" y="30" width="343" height="275"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Coverage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJ4-KY-Z73" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Coverage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJ4-KY-Z73" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kkO-ad-9Fg"/>
@@ -159,7 +159,7 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="drop_down"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Travel Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nm-l3-2LC" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Travel Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nm-l3-2LC" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="atH-Uk-Uex"/>
@@ -171,7 +171,7 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="drop_down"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Travel Start Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGP-Rh-lEg" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Travel Start Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGP-Rh-lEg" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="110" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="RMx-Ck-RxB"/>
@@ -183,7 +183,7 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="calendar"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Travel End Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ti-1K-ZgH" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Travel End Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ti-1K-ZgH" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="165" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="mcc-rY-Vux"/>
@@ -195,7 +195,7 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="calendar"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwB-I8-lwO" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwB-I8-lwO" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="220" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="huc-cE-U1K"/>
@@ -252,7 +252,7 @@
         <!--Details2 View Controller-->
         <scene sceneID="7b8-wL-jrV">
             <objects>
-                <viewController storyboardIdentifier="TIDetails2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V1o-5z-1Gl" customClass="TIDetails2ViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TIDetails2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V1o-5z-1Gl" customClass="TIDetails2ViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qiI-Pe-Mh5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,7 +260,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="lAW-rC-tiM">
                                 <rect key="frame" x="16" y="30" width="343" height="360"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of Insured as per CNIC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DM3-dv-9K7" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of Insured as per CNIC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DM3-dv-9K7" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="f5B-BY-cgO"/>
@@ -269,7 +269,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYR-IC-9gw" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYR-IC-9gw" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="KdA-Xa-YLS"/>
@@ -278,7 +278,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GrS-LK-JVv" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GrS-LK-JVv" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="110" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="NL6-GO-EwW"/>
@@ -290,7 +290,7 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="calendar"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Passport No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6JV-es-dIQ" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Passport No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6JV-es-dIQ" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="165" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Ofb-RK-vRt"/>
@@ -299,7 +299,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CNIC No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UCP-B9-cq4" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CNIC No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UCP-B9-cq4" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="220" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="I51-S7-IaS"/>
@@ -308,7 +308,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rng-gE-d7M" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rng-gE-d7M" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="275" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="YGc-xe-gCg"/>
@@ -320,7 +320,7 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="drop_down"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FUb-TZ-meX" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FUb-TZ-meX" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="330" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="29X-zi-Qdj"/>
@@ -357,7 +357,7 @@
         <!--Details3 View Controller-->
         <scene sceneID="tq3-Vr-VcV">
             <objects>
-                <viewController storyboardIdentifier="TIDetails3ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aom-tD-07q" customClass="TIDetails3ViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TIDetails3ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aom-tD-07q" customClass="TIDetails3ViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZV1-1g-8Ke">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -365,7 +365,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="T8E-N1-HQj">
                                 <rect key="frame" x="16" y="30" width="343" height="250"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0I-lw-qPq" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0I-lw-qPq" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="fMq-Je-YBe"/>
@@ -374,7 +374,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGa-Pb-qKq" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGa-Pb-qKq" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="jVE-5b-ZWR"/>
@@ -383,7 +383,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary CNIC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NOH-dU-5MG" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary CNIC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NOH-dU-5MG" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="110" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="f0v-ks-KYB"/>
@@ -392,7 +392,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary Contact Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfZ-dQ-G7f" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary Contact Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfZ-dQ-G7f" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="165" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="OwR-VL-ImX"/>
@@ -401,7 +401,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary Relation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FnD-QF-ZNg" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary Relation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FnD-QF-ZNg" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="220" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Fdf-Lz-FJA"/>
@@ -439,7 +439,7 @@
         <!--Family Details View Controller-->
         <scene sceneID="kNR-Tr-gzA">
             <objects>
-                <viewController storyboardIdentifier="TIFamilyDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hun-Oi-40Y" customClass="TIFamilyDetailsViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TIFamilyDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hun-Oi-40Y" customClass="TIFamilyDetailsViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cmg-Vw-pBP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -447,7 +447,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rLA-I9-Ohd">
                                 <rect key="frame" x="16" y="30" width="343" height="195"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wp1-v8-J7U" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wp1-v8-J7U" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="8db-2c-fKj"/>
@@ -456,7 +456,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzA-za-dat" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzA-za-dat" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="HTz-ZZ-wTw"/>
@@ -465,7 +465,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CNIC(Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BUS-JD-Uww" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CNIC(Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BUS-JD-Uww" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="110" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="r6h-Mo-1Ej"/>
@@ -474,7 +474,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Relation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4y-ma-tn6" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Relation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4y-ma-tn6" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="165" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="EKt-uH-hha"/>
@@ -501,7 +501,7 @@
                                 <rect key="frame" x="8" y="290" width="359" height="369"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TIFamilyCellTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="abcFamily" rowHeight="152" id="Idg-gd-lGk" customClass="TIFamilyCellTableViewCell" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TIFamilyCellTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="abcFamily" rowHeight="152" id="Idg-gd-lGk" customClass="TIFamilyCellTableViewCell" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="359" height="152"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Idg-gd-lGk" id="grq-4G-6vP">
@@ -722,7 +722,7 @@
         <!--NewTI Packages View Controller-->
         <scene sceneID="xy3-EU-7jf">
             <objects>
-                <viewController storyboardIdentifier="NewTIPackagesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dIc-D7-rRP" customClass="NewTIPackagesViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewTIPackagesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dIc-D7-rRP" customClass="NewTIPackagesViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FQ4-H1-EqQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -731,7 +731,7 @@
                                 <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TIPackageTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TIPackageTableViewCell" rowHeight="162" id="iUD-3y-58J" customClass="TIPackageTableViewCell" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TIPackageTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TIPackageTableViewCell" rowHeight="162" id="iUD-3y-58J" customClass="TIPackageTableViewCell" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iUD-3y-58J" id="j0g-8N-dmD">
@@ -828,7 +828,7 @@
         <!--Summary View Controller-->
         <scene sceneID="Vgm-vr-aok">
             <objects>
-                <viewController storyboardIdentifier="TISummaryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vWS-cc-T1h" customClass="TISummaryViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TISummaryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vWS-cc-T1h" customClass="TISummaryViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZy-8y-vPx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -856,7 +856,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewSummaryyTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewSummaryyTableViewCell" rowHeight="81" id="JRa-qz-1JZ" customClass="NewSummaryyTableViewCell" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewSummaryyTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewSummaryyTableViewCell" rowHeight="81" id="JRa-qz-1JZ" customClass="NewSummaryyTableViewCell" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JRa-qz-1JZ" id="jZQ-Ie-txn">
@@ -936,8 +936,8 @@
                                             <constraint firstAttribute="height" constant="44" id="lLe-fF-gLt"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
-                                        <state key="normal" image="icons8-unchecked-checkbox-50"/>
-                                        <state key="selected" image="icons8-checked-checkbox-50"/>
+                                        <state key="normal" image="checkbox_unselected"/>
+                                        <state key="selected" image="checkbox_selected"/>
                                         <connections>
                                             <action selector="TIScheckboxClicked:" destination="vWS-cc-T1h" eventType="touchUpInside" id="FI0-BZ-L0X"/>
                                         </connections>
@@ -998,7 +998,7 @@
         <!--Home Pager View Controller-->
         <scene sceneID="zhK-oQ-G4A">
             <objects>
-                <viewController storyboardIdentifier="homePagerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uqi-pC-Jbb" customClass="homePagerViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homePagerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uqi-pC-Jbb" customClass="homePagerViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gMW-DP-jtW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1060,7 +1060,7 @@
         <!--Details View Controller-->
         <scene sceneID="g0W-df-87O">
             <objects>
-                <viewController storyboardIdentifier="HIDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="z3W-QJ-qSe" customClass="HIDetailsViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HIDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="z3W-QJ-qSe" customClass="HIDetailsViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hsQ-aX-zDH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1074,7 +1074,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="snR-bT-89V">
                                                 <rect key="frame" x="16" y="30" width="343" height="440"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of Insured" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qys-c5-8lJ" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of Insured" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qys-c5-8lJ" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="uxQ-Hs-i7a"/>
@@ -1083,7 +1083,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uc1-xi-yVM" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uc1-xi-yVM" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="55" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="ejG-BP-3X4"/>
@@ -1095,7 +1095,7 @@
                                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="calendar"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vh8-yG-ADS" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vh8-yG-ADS" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="110" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="OFW-Ok-bUT"/>
@@ -1104,7 +1104,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Are you a" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eeg-3B-wbi" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Are you a" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eeg-3B-wbi" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="165" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="0y1-Rd-zFI"/>
@@ -1116,7 +1116,7 @@
                                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="drop_down"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your CNIC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JO3-nU-r8l" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your CNIC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JO3-nU-r8l" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="220" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="TZa-Za-q7w"/>
@@ -1125,7 +1125,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Home Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-ar-eTf" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Home Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-ar-eTf" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="275" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="vdC-eK-x4b"/>
@@ -1134,7 +1134,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City of Residence" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Jv-QK-xiE" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City of Residence" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Jv-QK-xiE" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="330" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="SpC-r9-va6"/>
@@ -1146,7 +1146,7 @@
                                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="drop_down"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Residential Area" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqf-oE-MIe" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Residential Area" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqf-oE-MIe" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="385" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="yJW-GU-L8v"/>
@@ -1158,7 +1158,7 @@
                                                             <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="drop_down"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenants Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UgS-nN-npe" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenants Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UgS-nN-npe" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="427.5" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="sGc-q1-jjc"/>
@@ -1167,7 +1167,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenants Cnic" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5a4-qx-jSS" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenants Cnic" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5a4-qx-jSS" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="427.5" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="RxZ-Ya-JjZ"/>
@@ -1176,7 +1176,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
-                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Landlord Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-f1-L3u" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Landlord Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-f1-L3u" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="427.5" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="CVC-uL-Nsq"/>
@@ -1185,7 +1185,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Landlord Cnic" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jX6-KE-Gld" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Landlord Cnic" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jX6-KE-Gld" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="427.5" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="xHS-bU-Atj"/>
@@ -1214,7 +1214,7 @@
                                                             </switch>
                                                         </subviews>
                                                     </stackView>
-                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Home structure value? (Max 30Million)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-FR-MiD" customClass="UnderLineTextField" customModule="TplInsurancTesting" customModuleProvider="target">
+                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Home structure value? (Max 30Million)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-FR-MiD" customClass="UnderLineTextField" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="440" width="343" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="th8-sn-bHp"/>
@@ -1279,7 +1279,7 @@
         <!--Packages View Controller-->
         <scene sceneID="KRV-oK-y1e">
             <objects>
-                <viewController storyboardIdentifier="HIPackagesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aEL-eB-Iam" customClass="HIPackagesViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HIPackagesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aEL-eB-Iam" customClass="HIPackagesViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HKz-xA-hU7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1288,7 +1288,7 @@
                                 <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HIPackageTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HIPackageTableViewCell" rowHeight="162" id="hTy-mY-R1Y" customClass="HIPackageTableViewCell" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HIPackageTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HIPackageTableViewCell" rowHeight="162" id="hTy-mY-R1Y" customClass="HIPackageTableViewCell" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hTy-mY-R1Y" id="YX1-bP-kFR">
@@ -1386,7 +1386,7 @@
         <!--Summary View Controller-->
         <scene sceneID="tW2-lV-Bsc">
             <objects>
-                <viewController storyboardIdentifier="HISummaryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oFW-Qb-DWd" customClass="HISummaryViewController" customModule="TplInsurancTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HISummaryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oFW-Qb-DWd" customClass="HISummaryViewController" customModule="TplInsurancePodUpdated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YCD-V9-yCI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1414,7 +1414,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewSummaryyTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewSummaryyTableViewCell" rowHeight="81" id="q07-GF-R2R" customClass="NewSummaryyTableViewCell" customModule="TplInsurancTesting" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewSummaryyTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewSummaryyTableViewCell" rowHeight="81" id="q07-GF-R2R" customClass="NewSummaryyTableViewCell" customModule="TplInsurancePodUpdated" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q07-GF-R2R" id="1KE-I0-gRP">
@@ -1494,8 +1494,8 @@
                                             <constraint firstAttribute="height" constant="44" id="VZP-Pr-CJP"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
-                                        <state key="normal" title="buu" image="icons8-unchecked-checkbox-50"/>
-                                        <state key="selected" image="icons8-checked-checkbox-50"/>
+                                        <state key="normal" image="checkbox_unselected"/>
+                                        <state key="selected" image="checkbox_selected"/>
                                         <connections>
                                             <action selector="actionCheckbox:" destination="oFW-Qb-DWd" eventType="touchUpInside" id="Zto-ZJ-K86"/>
                                         </connections>
@@ -1538,8 +1538,8 @@
     </scenes>
     <resources>
         <image name="calendar" width="16" height="16"/>
+        <image name="checkbox_selected" width="32" height="32"/>
+        <image name="checkbox_unselected" width="36" height="36"/>
         <image name="drop_down" width="16" height="16"/>
-        <image name="icons8-checked-checkbox-50" width="16" height="16"/>
-        <image name="icons8-unchecked-checkbox-50" width="16" height="16"/>
     </resources>
 </document>

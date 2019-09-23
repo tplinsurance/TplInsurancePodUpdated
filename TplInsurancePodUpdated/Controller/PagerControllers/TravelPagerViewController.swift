@@ -27,10 +27,6 @@ class TravelPagerViewController: PagerViewController {
         self.controller3 = (storyboard!.instantiateViewController(withIdentifier: "TIFamilyDetailsViewController"), "Travel Insurance - Family Details", false)
         self.controller4 = (storyboard!.instantiateViewController(withIdentifier: "NewTIPackagesViewController"), "Travel Insurance - Packages", false)
         self.controller5 = (storyboard!.instantiateViewController(withIdentifier: "TISummaryViewController"), "Travel Insurance - Summary", false)
-//        self.controller6 = (storyboard!.instantiateViewController(withIdentifier: "PaymentOptionsViewController2"), "Payment Mode", false)
-//        self.controller7 = (storyboard!.instantiateViewController(withIdentifier: "TIWebKitViewController"), "Travel Insurance- Payment Method", false)
-
-//        pages = [controller,controller1,controller2,controller3,controller4,controller5,controller6,controller7]
         pages = [controller,controller1,controller2,controller3,controller4,controller5]
 
         super.viewDidLoad()

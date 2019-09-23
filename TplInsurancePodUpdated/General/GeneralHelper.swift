@@ -46,7 +46,7 @@ extension UIViewController {
     }
     
     func showActivityIndicatory() {
-        var activityView = UIActivityIndicatorView(style: .whiteLarge)
+        let activityView = UIActivityIndicatorView(style: .whiteLarge)
         activityView.center = self.view.center
         self.view.addSubview(activityView)
         activityView.startAnimating()

@@ -15,8 +15,7 @@ class homePagerViewController: PagerViewController {
         let controller = (storyboard!.instantiateViewController(withIdentifier: "HIDetailsViewController"), "Home Insurance - Details", false)
         let controller1 = (storyboard!.instantiateViewController(withIdentifier: "HIPackagesViewController"), "Home Insurance - Packages", true)
         let controller2 = (storyboard!.instantiateViewController(withIdentifier: "HISummaryViewController"), "Home Insurance - Summary", false)
-//        let controller3 = (storyboard!.instantiateViewController(withIdentifier: "PaymentOptionsViewController"), "Payment Mode", false)
-//        let controller4 = (storyboard!.instantiateViewController(withIdentifier: "HIWebKitViewController"), "Home Insurance- Payment Method", false)
+
         pages = [controller,controller1,controller2]
         
         super.viewDidLoad()

@@ -91,24 +91,16 @@ extension HISummaryViewController: UITableViewDelegate,UITableViewDataSource {
 // MARK: - New work which opens new payment mode page
 extension HISummaryViewController: PagerViewDelegate {
     
-    //MARK: - CallBack To receive result
-//    @IBAction func someCallback(sender: UIStoryboardSegue){
-//        let sourceViewController = sender.source as? MealViewController
-//        let data = sourceViewController.someValue
-//    }
-    
     func willMoveTo(next controller: UIViewController, completionHandler: @escaping (Bool) -> Void) {
         if checkbox.isSelected{
             self.showActivityIndicatory()
 
-            self.showActivityIndicatory()
             //MARK: - For Blocking user interaction
             UIApplication.shared.beginIgnoringInteractionEvents()
             //Open this
             api?.HIProposalApi(completionHandler: { (success,result) in
                 
                 DispatchQueue.main.async {
-//                    self.view.hideToastActivity()
                     self.showActivityIndicatory()
                     //MARK: - For Un-Blocking user interaction
                     UIApplication.shared.endIgnoringInteractionEvents()
@@ -117,12 +109,10 @@ extension HISummaryViewController: PagerViewDelegate {
                         
                         let defaultAction = UIAlertAction(title: "Continue payment", style: UIAlertAction.Style.default, handler: { [weak self](action) in
                             
-                            var quoteId = String(describing: self?.api?.HIQuote![0].quoteId)
-                            let controller = self?.storyboard?.instantiateViewController(withIdentifier: "PaymentOptionsViewController") as! PaymentOptionsViewController
-                            var url = "https://customer.tplinsurance.com:444/PaymentModel/CustomerDetail.aspx?Type=Home&SalesFormNo=\("result" ?? "")"
-//                            controller.myurl = "https://customer.tplinsurance.com:444/PaymentModel/CustomerDetail.aspx?Type=Home&SalesFormNo=\("result" ?? "")"
-//                            controller.apiHome = self!.api
-                            print("url passed is: \(url)")
+                            let quoteId = String(describing: self?.api?.HIQuote![0].quoteId)
+                            let amount = String(describing: self?.api?.HIQuote![0].netPremium_NonFiler)
+                            
+                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
 //                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
                             self?.dismiss(animated: true, completion: nil)
 //                            self?.navigationController?.pushViewController(controller, animated: true)
@@ -144,42 +134,3 @@ extension HISummaryViewController: PagerViewDelegate {
         
     }
 }
-
-// MARK: - Previous work which direct opens webview
-//extension HISummaryViewController: PagerViewDelegate {
-//    func willMoveTo(next controller: UIViewController, completionHandler: @escaping (Bool) -> Void) {
-//        if checkbox.isSelected{
-//            self.view.makeToastActivity(.center)
-//            api?.HIProposalApi(completionHandler: { (success,result) in
-//
-//                DispatchQueue.main.async {
-//                    self.view.hideToastActivity()
-//                    if success {
-//
-//                        let defaultAction = UIAlertAction(title: "Continue payment", style: UIAlertActionStyle.default, handler: { [weak self](action) in
-//
-//                            //                        self?.navigationController?.popViewController(animated: true)
-//                            var quoteId = String(describing: self?.api?.HIQuote![0].quoteId)
-//                            let controller = self?.storyboard?.instantiateViewController(withIdentifier: "HIWebKitViewController") as! HIWebKitViewController
-////                            controller.myurl = "http://customer.tplinsurance.com/onlinesales_uat/PaymentMethod.aspx?Product_Id=\(quoteId ?? "")&Type=Home&SalesFormNo=\(result ?? "")"
-//
-////                            controller.myurl = "http://customer.tplinsurance.com/OnlineSales_UAT/PaymentModel/CustomerDetail.aspx?Type=Home&SalesFormNo=\(result ?? "")"
-//                            controller.myurl = "https://customer.tplinsurance.com:444/PaymentModel/CustomerDetail.aspx?Type=Home&SalesFormNo=\(result ?? "")"
-//                            print("url passed is: \(controller.myurl)")
-//                            self?.navigationController?.pushViewController(controller, animated: true)
-//
-//                        })
-//
-//                        TIHelper.showAlert(ViewController: self, AlertTitle: "Request Submitted", AlertMessage: "Thank you for choosing TPL Insurance. Proposal number is : \(result). After successful payment your policy will be emailed to you within 24 hours. ", AlertStyle: .alert , Actions: [defaultAction])
-//
-//                    } else {
-//                        self.view.makeToast("Request Failed.")
-//                    }
-//                }
-//            })
-//        }else{
-//            self.view.makeToast("Please accept this plan to proceed")
-//        }
-//
-//    }
-//}
