@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "49AB28954E317EBC2985F8B4776619B4"
+               BlueprintIdentifier = "6F1FB895CC1291D054E2CDBB81121BA9"
+               BuildableName = "TrustKit.framework"
                BlueprintName = "TrustKit"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "TrustKit.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

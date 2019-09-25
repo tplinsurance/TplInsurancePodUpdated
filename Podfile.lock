@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.8.2)
+  - Alamofire (4.9.0)
   - SkyFloatingLabelTextField (3.7.0)
   - TrustKit (1.6.0)
 
@@ -9,16 +9,16 @@ DEPENDENCIES:
   - TrustKit (= 1.6.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - SkyFloatingLabelTextField
     - TrustKit
 
 SPEC CHECKSUMS:
-  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   SkyFloatingLabelTextField: 4b46db0ab1ccde0919cded29c656e6b4805eda04
   TrustKit: 55ff9670dd8b3697eb23124cfc6c96aeca9c40e7
 
 PODFILE CHECKSUM: c21d7d6c028a51f6b7217730ce0ae93da54925ef
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.0

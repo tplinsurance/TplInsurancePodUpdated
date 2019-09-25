@@ -5,13 +5,13 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '11.0'
+s.ios.deployment_target = '10.0'
 s.name = "TplInsurancePodUpdated"
 s.summary = "A short description of TplInsurancePodUpdated."
 s.requires_arc = true
 
 # 2
-s.version = "0.0.8"
+s.version = "0.0.9"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
