@@ -37,6 +37,10 @@ class TISummaryViewController: UIViewController {
     var yourArray = [familyData]()
     var api = travelInsuranceDataHandler()
     
+    //Filer non filer amount
+    var filer_amount:String = "0"
+    var nonFiler_amount:String = "0"
+    
     @IBOutlet weak var TISCheckboxLabel: UIButton!
     @IBOutlet weak var TISummaryTable: UITableView!
     @IBAction func TIScheckboxClicked(_ sender: Any) {
@@ -127,8 +131,8 @@ extension TISummaryViewController: UITableViewDelegate,UITableViewDataSource {
 extension TISummaryViewController: PagerViewDelegate {
     func willMoveTo(next controller: UIViewController, completionHandler: @escaping (Bool) -> Void) {
         if TISCheckboxLabel.isSelected{
-            
             self.showActivityIndicatory()
+            self.view.isUserInteractionEnabled = false
 
             var mobileNum = UserDefaults.standard.object(forKey: TIConstant.userMobileNoKey) as? String
             print("Mobile number from shared prefrences is: \(mobileNum)")
@@ -138,26 +142,16 @@ extension TISummaryViewController: PagerViewDelegate {
                 
                 DispatchQueue.main.async {
                     self.stopIndicator()
+                    self.view.isUserInteractionEnabled = true
                     if success {
                         
                         let defaultAction = UIAlertAction(title: "Continue payment", style: UIAlertAction.Style.default, handler: { [weak self](action) in
-                            
-                            //                        self?.navigationController?.popViewController(animated: true)
                             let quoteId = String(describing: self?.api.TIQuote![0].quote_Id)
-                            let amount = String(describing: self?.api.TIQuote![0].netPremium_NonFiler)
+                            self?.filer_amount = String(describing: self?.api.TIQuote![0].netPremium_Filer)
+                            self?.nonFiler_amount = String(describing: self?.api.TIQuote![0].netPremium_NonFiler)
                             
-                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
+                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!)
                             self?.dismiss(animated: true, completion: nil)
-//                            let controller = self?.storyboard?.instantiateViewController(withIdentifier: "PaymentOptionsViewController") as! PaymentOptionsViewController
-//                            controller.myurl = "http://customer.tplinsurance.com/onlinesales_uat/PaymentMethod.aspx?Product_Id=\(quoteId ?? "")&Type=Travel&SalesFormNo=\(result ?? "")"
-//                            controller.apiTravel = self?.api
-                            
-                            //open it
-//                            controller.myurl = "https://customer.tplinsurance.com:444/PaymentModel/CustomerDetail.aspx?Type=Travel&SalesFormNo=\(result ?? "")"
-
-                            
-//                            print("url passed is: \(controller.myurl)")
-//                            self?.navigationController?.pushViewController(controller, animated: true)
                             
                         })
                         

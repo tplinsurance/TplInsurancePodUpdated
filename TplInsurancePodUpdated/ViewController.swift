@@ -10,22 +10,11 @@ import UIKit
 
 open class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    //    let InsuranceType = ["Car Insurance", "Mobile Insurance", "Home Insurance", "Travel Insurance"]
     let InsuranceType = ["Travel Insurance", "Home Insurance"]
     let InsuranceDetails = ["Get peace of mind for wherever the road takes you", "Safe travels, we have got you covered"]
     let InsuranceTypeImages = ["vehicle_claim", "home_insuranceLogo"]
     let insuranceDialogDetails = ["1. Personal CNIC\n  2. Beneficiary CNIC\n  3. Beneficiary Address\n", "1. Personal CNIC\n  2. Tenant /  Landlord CNIC\n"]
     let generalDialogDetail = "Please make sure you have the below information ready, while filling out the form:\n"
-    
-    //    let defaultAction = UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: { [weak self](action) in
-    //
-    //    })
-    
-    
-    
-    //    refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-    //    print("Handle Ok logic here")
-    //    }))
     
     @IBOutlet weak var dataTable: UITableView!
     open override func viewDidLoad() {
@@ -85,7 +74,6 @@ open class ViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //        return InsuranceType.count
         return 2
     }
     

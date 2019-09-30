@@ -10,6 +10,8 @@ import UIKit
 
 class HISummaryViewController: UIViewController {
     var api: HomeInsuranceDataHandler?
+    var filer_amount:String = "0"
+    var nonFiler_amount:String = "0"
     
     @IBOutlet weak var labelNonFiler: UILabel!
     @IBOutlet weak var summaryTable: UITableView!
@@ -94,6 +96,7 @@ extension HISummaryViewController: PagerViewDelegate {
     func willMoveTo(next controller: UIViewController, completionHandler: @escaping (Bool) -> Void) {
         if checkbox.isSelected{
             self.showActivityIndicatory()
+            self.view.isUserInteractionEnabled = false
 
             //MARK: - For Blocking user interaction
             UIApplication.shared.beginIgnoringInteractionEvents()
@@ -101,24 +104,28 @@ extension HISummaryViewController: PagerViewDelegate {
             api?.HIProposalApi(completionHandler: { (success,result) in
                 
                 DispatchQueue.main.async {
-                    self.showActivityIndicatory()
                     //MARK: - For Un-Blocking user interaction
                     UIApplication.shared.endIgnoringInteractionEvents()
                     //Open this
+                    self.stopIndicator()
+                    self.view.isUserInteractionEnabled = true
                     if success {
                         
                         let defaultAction = UIAlertAction(title: "Continue payment", style: UIAlertAction.Style.default, handler: { [weak self](action) in
                             
                             let quoteId = String(describing: self?.api?.HIQuote![0].quoteId)
-                            let amount = String(describing: self?.api?.HIQuote![0].netPremium_NonFiler)
+//                            let amount = String(describing: self?.api?.HIQuote![0].netPremium_NonFiler)
+                            self?.filer_amount = String(describing: self?.api?.HIQuote![0].netPremium_Filer)
+                            self?.nonFiler_amount = String(describing: self?.api?.HIQuote![0].netPremium_NonFiler)
                             
-                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
+                            print("proposalId: \(quoteId) ::::  filer_amount: \((self?.filer_amount)!) :::::  nonFiler_amount: \((self?.nonFiler_amount)!)")
+                            
+                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!)
 //                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
                             self?.dismiss(animated: true, completion: nil)
 //                            self?.navigationController?.pushViewController(controller, animated: true)
                             
                         })
-                        self.stopIndicator()
 
                         TIHelper.showAlert(ViewController: self, AlertTitle: "Request Submitted", AlertMessage: "Thank you for choosing TPL Insurance. Proposal number is : \(result). After successful payment your policy will be emailed to you within 24 hours. ", AlertStyle: .alert , Actions: [defaultAction])
                         //Open this
