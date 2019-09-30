@@ -10,13 +10,13 @@ import UIKit
 
 open class TPLInsurance: NSObject { 
 
-    weak var delegate: TPLInsuranceDelegate? = nil
+    public weak var delegate: TPLInsuranceDelegate? = nil
     
     public static let shared = TPLInsurance()
     
     private override init() { }
     
-    open func openTPLInsurance(with controller: UIViewController, delegate: TPLInsuranceDelegate) {
+    open func openTPLInsurance(with controller: UIViewController, delegate: TPLInsuranceDelegate?) {
         self.delegate = delegate
         presentInitialController(controller: controller)
     }
@@ -31,7 +31,7 @@ open class TPLInsurance: NSObject {
 }
 
 public protocol TPLInsuranceDelegate: class {
-    func userDidSubmittedInsurance(proposalId: String, filer_amount: String, nonFiler_amount:String)
+     func userDidSubmittedInsurance(proposalId: String, filer_amount: String, nonFiler_amount:String)
 }
 
 extension Bundle {
