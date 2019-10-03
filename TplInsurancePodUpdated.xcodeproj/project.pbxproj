@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9FF1C6499264BEEAF1E6578F /* Pods_TplInsurancePodUpdatedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48217A860A3EC7280227569 /* Pods_TplInsurancePodUpdatedTests.framework */; };
+		F05F2D2B2345FDCC002B85F9 /* GetToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F2D2A2345FDCC002B85F9 /* GetToken.swift */; };
 		F092D6E7231501AA007CA6BB /* TplInsurancePodUpdated.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F092D6DD231501AA007CA6BB /* TplInsurancePodUpdated.framework */; };
 		F092D6EC231501AA007CA6BB /* TplInsurancePodUpdatedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092D6EB231501AA007CA6BB /* TplInsurancePodUpdatedTests.swift */; };
 		F092D6EE231501AA007CA6BB /* TplInsurancePodUpdated.h in Headers */ = {isa = PBXBuildFile; fileRef = F092D6E0231501AA007CA6BB /* TplInsurancePodUpdated.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,6 +81,7 @@
 		737F74980D80DDE0D90BF99B /* Pods-TplInsurancePodUpdated.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TplInsurancePodUpdated.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TplInsurancePodUpdated/Pods-TplInsurancePodUpdated.debug.xcconfig"; sourceTree = "<group>"; };
 		C48217A860A3EC7280227569 /* Pods_TplInsurancePodUpdatedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TplInsurancePodUpdatedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE878CF01CA57105D81F8926 /* Pods-TplInsurancePodUpdatedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TplInsurancePodUpdatedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TplInsurancePodUpdatedTests/Pods-TplInsurancePodUpdatedTests.release.xcconfig"; sourceTree = "<group>"; };
+		F05F2D2A2345FDCC002B85F9 /* GetToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetToken.swift; sourceTree = "<group>"; };
 		F092D6DD231501AA007CA6BB /* TplInsurancePodUpdated.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TplInsurancePodUpdated.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F092D6E0231501AA007CA6BB /* TplInsurancePodUpdated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TplInsurancePodUpdated.h; sourceTree = "<group>"; };
 		F092D6E1231501AA007CA6BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				F092D6FC23150312007CA6BB /* TIHelper.swift */,
 				F092D70123150312007CA6BB /* UnderLineTextField.swift */,
 				F092D70223150312007CA6BB /* ValidationTextField.swift */,
+				F05F2D2A2345FDCC002B85F9 /* GetToken.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				F092D748231503AC007CA6BB /* HIPackagesViewController.swift in Sources */,
 				F092D74B231503AC007CA6BB /* HISummaryViewController.swift in Sources */,
 				F092D73123150345007CA6BB /* TITravelTypeModel.swift in Sources */,
+				F05F2D2B2345FDCC002B85F9 /* GetToken.swift in Sources */,
 				F092D71423150321007CA6BB /* travelInsuranceDataHandler.swift in Sources */,
 				F092D74C231503AC007CA6BB /* HIDetailsViewController.swift in Sources */,
 				F092D73A23150377007CA6BB /* NewSummaryyTableViewCell.swift in Sources */,

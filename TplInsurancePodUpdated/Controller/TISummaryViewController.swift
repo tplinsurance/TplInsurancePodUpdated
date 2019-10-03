@@ -150,8 +150,8 @@ extension TISummaryViewController: PagerViewDelegate {
                             self?.filer_amount = String(describing: self?.api.TIQuote![0].netPremium_Filer)
                             self?.nonFiler_amount = String(describing: self?.api.TIQuote![0].netPremium_NonFiler)
                             
-                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!)
-                            self?.dismiss(animated: true, completion: nil)
+                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!, token: GetToken.shared.getAuthorizedHeader())
+//                            self?.dismiss(animated: true, completion: nil)
                             
                         })
                         

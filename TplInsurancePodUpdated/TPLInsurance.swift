@@ -13,6 +13,7 @@ open class TPLInsurance: NSObject {
     public weak var delegate: TPLInsuranceDelegate? = nil
     
     public static let shared = TPLInsurance()
+    var token = GetToken.shared.getAuthorizedHeader()
     
     private override init() { }
     
@@ -31,7 +32,9 @@ open class TPLInsurance: NSObject {
 }
 
 public protocol TPLInsuranceDelegate: class {
-     func userDidSubmittedInsurance(proposalId: String, filer_amount: String, nonFiler_amount:String)
+    func userDidSubmittedInsurance(proposalId: String, filer_amount: String, nonFiler_amount:String, token: [String : String])
+    
+    func userDidCancelInsurance()
 }
 
 extension Bundle {

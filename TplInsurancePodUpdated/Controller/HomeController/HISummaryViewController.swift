@@ -120,9 +120,9 @@ extension HISummaryViewController: PagerViewDelegate {
                             
                             print("proposalId: \(quoteId) ::::  filer_amount: \((self?.filer_amount)!) :::::  nonFiler_amount: \((self?.nonFiler_amount)!)")
                             
-                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!)
+                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!, token: GetToken.shared.getAuthorizedHeader())
 //                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
-                            self?.dismiss(animated: true, completion: nil)
+//                            self?.dismiss(animated: true, completion: nil)
 //                            self?.navigationController?.pushViewController(controller, animated: true)
                             
                         })
