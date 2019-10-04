@@ -23,7 +23,7 @@ s.author = { "Mohammed Ahsan" => "mohammedahsan110@gmail.com" }
 s.homepage = "https://github.com/tplinsurance/TplInsurancePodUpdated"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/tplinsurance/TplInsurancePodUpdated.git", :tag => "0.1.13" }
+s.source = { :git => "https://github.com/tplinsurance/TplInsurancePodUpdated.git", :tag => "0.0.9" }
 
 # 7
 s.framework = "UIKit"
