@@ -8,12 +8,45 @@
 
 import UIKit
 
-open class TPLInsurance: NSObject { 
+open class TPLInsurance: NSObject{
+    
+    public weak var delegate: TPLInsuranceDelegate? = nil
+    
+    public static let shared = TPLInsurance()
+    
+    private override init() { }
+    
+    open func openTPLInsurance(with controller: UIViewController, delegate: TPLInsuranceDelegate) {
+        self.delegate = delegate
+        presentInitialController(controller: controller)
+    }
+    
+    private func presentInitialController(controller: UIViewController) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "InsuranceMain", bundle: .framework)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController")
+        let navigationController = UINavigationController(rootViewController: nextViewController)
+        controller.present(navigationController, animated:true, completion:nil)
+    }
+    
+}
+
+public protocol TPLInsuranceDelegate: class {
+    func userDidSubmittedInsurance(proposalId: String, filer_amount: String, nonFiler_amount:String, token: [String : String])
+    
+    func quitInsurance()
+}
+
+extension Bundle {
+    static let framework = Bundle.init(identifier: "org.cocoapods.TplInsurancePodUpdated")
+}
+
+
+/*{
 
     public weak var delegate: TPLInsuranceDelegate? = nil
     
     public static let shared = TPLInsurance()
-    var token = GetToken.shared.getAuthorizedHeader()
+
     
     private override init() { }
     
@@ -39,4 +72,38 @@ public protocol TPLInsuranceDelegate: class {
 
 extension Bundle {
     static let framework = Bundle.init(identifier: "org.cocoapods.TplInsurancePodUpdated")
-}
+}*/
+
+/*
+ 
+ {
+ 
+ weak var delegate: TPLInsuranceDelegate? = nil
+ 
+ public static let shared = TPLInsurance()
+ 
+ private override init() { }
+ 
+ open func openTPLInsurance(with controller: UIViewController, delegate: TPLInsuranceDelegate) {
+ self.delegate = delegate
+ presentInitialController(controller: controller)
+ }
+ 
+ private func presentInitialController(controller: UIViewController) {
+ let storyBoard : UIStoryboard = UIStoryboard(name: "InsuranceMain", bundle: .framework)
+ let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController")
+ let navigationController = UINavigationController(rootViewController: nextViewController)
+ controller.present(navigationController, animated:true, completion:nil)
+ }
+ 
+ }
+ 
+ public protocol TPLInsuranceDelegate: class {
+ func userDidSubmittedInsurance(proposalId: String, amount: String)
+ }
+ 
+ extension Bundle {
+ static let framework = Bundle.init(identifier: "org.cocoapods.TplInsurancePodUpdated")
+ }
+ 
+ */

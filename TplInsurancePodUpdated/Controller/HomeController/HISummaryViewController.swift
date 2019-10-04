@@ -16,6 +16,10 @@ class HISummaryViewController: UIViewController {
     @IBOutlet weak var labelNonFiler: UILabel!
     @IBOutlet weak var summaryTable: UITableView!
     @IBOutlet weak var checkbox: UIButton!
+    
+    //you can use this to get token for endpoint api simsim
+    var token = GetToken.shared.getAuthorizedHeader()
+    
     @IBAction func actionCheckbox(_ sender: Any) {
         if checkbox.isSelected{
             checkbox.isSelected = false
@@ -120,7 +124,9 @@ extension HISummaryViewController: PagerViewDelegate {
                             
                             print("proposalId: \(quoteId) ::::  filer_amount: \((self?.filer_amount)!) :::::  nonFiler_amount: \((self?.nonFiler_amount)!)")
                             
-                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!, token: GetToken.shared.getAuthorizedHeader())
+                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!, token: self?.token ?? ["nil":"nil"])
+                            
+                            TPLInsurance.shared.delegate?.quitInsurance()
 //                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
 //                            self?.dismiss(animated: true, completion: nil)
 //                            self?.navigationController?.pushViewController(controller, animated: true)

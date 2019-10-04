@@ -11,7 +11,7 @@ s.summary = "A short description of TplInsurancePodUpdated."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.13"
+s.version = "0.1.14"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -23,7 +23,7 @@ s.author = { "Mohammed Ahsan" => "mohammedahsan110@gmail.com" }
 s.homepage = "https://github.com/tplinsurance/TplInsurancePodUpdated"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/tplinsurance/TplInsurancePodUpdated.git", :tag => "0.0.9" }
+s.source = { :git => "https://github.com/tplinsurance/TplInsurancePodUpdated.git", :tag => "0.1.14" }
 
 # 7
 s.framework = "UIKit"
