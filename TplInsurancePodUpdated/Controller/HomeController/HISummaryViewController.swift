@@ -126,7 +126,7 @@ extension HISummaryViewController: PagerViewDelegate {
                             
                             TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!, token: self?.token ?? ["nil":"nil"])
                             
-                            TPLInsurance.shared.delegate?.quitInsurance()
+//                            TPLInsurance.shared.delegate?.quitInsurance()
 //                            TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, amount: amount)
 //                            self?.dismiss(animated: true, completion: nil)
 //                            self?.navigationController?.pushViewController(controller, animated: true)

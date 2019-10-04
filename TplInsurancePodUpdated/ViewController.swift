@@ -38,7 +38,8 @@ open class ViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cancelAlert = UIAlertController(title: "Exit", message: "Are you sure you want to quit from this process?", preferredStyle: UIAlertController.Style.alert)
         
         cancelAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
-            self.dismiss(animated: true, completion: nil)
+//            self.dismiss(animated: true, completion: nil)
+            TPLInsurance.shared.delegate?.quitInsurance()
         }))
         
         cancelAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
