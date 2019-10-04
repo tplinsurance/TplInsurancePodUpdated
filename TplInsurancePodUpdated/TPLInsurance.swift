@@ -16,7 +16,7 @@ open class TPLInsurance: NSObject{
     
     private override init() { }
     
-    open func openTPLInsurance(with controller: UIViewController, delegate: TPLInsuranceDelegate) {
+    open func openTPLInsurance(with controller: UIViewController, delegate: TPLInsuranceDelegate?) {
         self.delegate = delegate
         presentInitialController(controller: controller)
     }
