@@ -401,6 +401,18 @@ extension TIDetails1ViewController: UITextFieldDelegate{
     func textFieldDidBeginEditing(_ textField: UITextField) {
         //        fieldForPicker = textField as! UnderLineTextField
         
+        //MARK: - Handle 0 index value for Done button
+        
+        if textField.text == ""{
+            if textField == self.coveragePicker {
+                self.coveragePicker.text = self.coverageType[0]
+            }else if textField == self.travelTypePicker {
+                if let itemselected = self.travelType?[1].name{
+                    self.travelTypePicker.text = itemselected
+                }
+            }
+        }
+        
         //datePicker.isUserInteractionEnabled = false
         if textField == self.travelStartDatePicker || textField == self.travelEndDatePicker {
             if textField == self.travelEndDatePicker && coveragePicker.text == coverageType[0] && travelTypePicker.text == "Domestic" && travelStartDatePicker.text != "" {
