@@ -17,7 +17,59 @@ open class ViewController: UIViewController, UITableViewDataSource, UITableViewD
     let generalDialogDetail = "Please make sure you have the below information ready, while filling out the form:\n"
     
     @IBOutlet weak var dataTable: UITableView!
+    
     open override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        dataTable.delegate = self
+        dataTable.dataSource = self
+        
+        self.navigationItem.title = "Buy Insurance"
+        
+        // Do any additional setup after loading the view.
+        
+        //        self.navigationItem.setHidesBackButton(true, animated:true);
+        //        let newBackButton = UIBarButtonItem(title: "Exit", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.backCustom(sender:)))
+        //        self.navigationItem.leftBarButtonItem = newBackButton
+        
+    }
+    
+    /*@objc func backCustom(sender: UIBarButtonItem) {
+        
+        let cancelAlert = UIAlertController(title: "Exit", message: "Are you sure you want to quit from this process?", preferredStyle: UIAlertController.Style.alert)
+        
+        cancelAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
+            //            self.dismiss(animated: true, completion: nil)
+            TPLInsurance.shared.delegate?.quitInsurance()
+        }))
+        
+        cancelAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
+            
+            cancelAlert .dismiss(animated: true, completion: nil)
+            
+        }))
+        
+        present(cancelAlert, animated: true, completion: nil)
+        
+    }*/
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated) //UIColor(red: 227.0/255.0, green: 118.0/255.0, blue: 57.0/255.0, alpha: 1.0)
+        //        navigationController?.navigationBar.barTintColor = UIColor(red: 243.0/255.0, green: 111.0/255.0, blue: 33.0/255.0, alpha: 1.0)
+        //        navigationController?.navigationBar.isTranslucent = false
+        //        navigationController?.navigationBar.tintColor = UIColor(red: 117.0/255.0, green: 117.0/255.0, blue: 117.0/255.0, alpha: 1.0)
+        //        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+    }
+    
+    
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        //        navigationController?.navigationBar.barTintColor = UIColor.white
+        //        navigationController?.navigationBar.isTranslucent = true
+    }
+    
+    //MARK: - Previous Work done here
+    /*open override func viewDidLoad() {
         super.viewDidLoad()
         
         dataTable.delegate = self
@@ -65,7 +117,7 @@ open class ViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.barTintColor = UIColor.white
         navigationController?.navigationBar.isTranslucent = true
-    }
+    }*/
     
     
     

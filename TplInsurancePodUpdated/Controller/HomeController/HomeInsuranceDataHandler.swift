@@ -240,8 +240,11 @@ class HomeInsuranceDataHandler{
                 if let data = response.data{
                     let result = InsuranceProposalModel.decodeJsonData(data: data)
                     self.HIresult = result
-                    print("response is \(result![0].OrderID ?? "")")
-                    completionHandler(true, self.HIresult![0].OrderID ?? "")
+                    if let result = self.HIresult?[0].OrderID{
+                        completionHandler(true, self.HIresult![0].OrderID ?? "")
+                    }else{
+                        completionHandler(false, "nil")
+                    }
                     
                 }
                 //previous work

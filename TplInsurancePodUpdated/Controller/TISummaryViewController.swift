@@ -42,7 +42,7 @@ class TISummaryViewController: UIViewController {
     var nonFiler_amount:String = "0"
     
     //you can use this to get token for endpoint api simsim
-    let token = GetToken.shared.getAuthorizedHeader()
+    var token = GetToken.shared.getAuthorizedHeader()
     
     @IBOutlet weak var TISCheckboxLabel: UIButton!
     @IBOutlet weak var TISummaryTable: UITableView!
@@ -152,6 +152,8 @@ extension TISummaryViewController: PagerViewDelegate {
                             let quoteId = String(describing: self?.api.TIQuote![0].quote_Id)
                             self?.filer_amount = String(describing: self?.api.TIQuote![0].netPremium_Filer)
                             self?.nonFiler_amount = String(describing: self?.api.TIQuote![0].netPremium_NonFiler)
+                            self?.token["premium"] = String(describing: self?.api.TIQuote![0].originalPremium)
+                            self?.token["insuranceType"] = String(describing: self?.api.TIQuote![0].package)
                             
                             TPLInsurance.shared.delegate?.userDidSubmittedInsurance(proposalId: quoteId, filer_amount: (self?.filer_amount)!, nonFiler_amount: (self?.nonFiler_amount)!, token: self?.token ?? ["nil":"nil"])
 //                            TPLInsurance.shared.delegate?.quitInsurance()

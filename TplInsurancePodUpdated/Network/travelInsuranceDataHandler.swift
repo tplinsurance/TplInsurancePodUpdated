@@ -253,8 +253,11 @@ class travelInsuranceDataHandler{
                     let result = InsuranceProposalModel.decodeJsonData(data: data)
                     self.result = result
 //                    print("response is \(result![0].OrderID ?? "nil")")
-                    completionHandler(true, result!)
-                    
+                    if let result = self.result{
+                        completionHandler(true, result)
+                    }else{
+                        completionHandler(false,[InsuranceProposalModel]())
+                    }
                 }else{
                 }
                 //Old Work

@@ -45,18 +45,41 @@ extension UIViewController {
         
     }
     
-    func showActivityIndicatory() {
+/*    func showActivityIndicatory() {
         let activityView = UIActivityIndicatorView(style: .gray)
         activityView.center = self.view.center
         activityView.hidesWhenStopped = true
         activityView.style = UIActivityIndicatorView.Style.whiteLarge
         self.view.addSubview(activityView)
         activityView.startAnimating()
+    }*/
+    func showActivityIndicatory() {
+        if let window = self.view.window {
+            let blurView = UIView(frame: window.frame)
+            blurView.tag = -1000
+            blurView.backgroundColor = .lightGray
+            blurView.alpha = 0.5
+            let activityView = UIActivityIndicatorView(style: .white)
+            activityView.center = window.center
+            activityView.hidesWhenStopped = true
+            activityView.style = .white
+            activityView.startAnimating()
+            blurView.addSubview(activityView)
+            window.addSubview(blurView)
+        }
     }
     
     func stopIndicator(){
-        UIActivityIndicatorView().stopAnimating()
+        if let window = self.view.window {
+            if let blurView = window.viewWithTag(-1000) {
+                blurView.removeFromSuperview()
+            }
+        }
     }
+    
+//    func stopIndicator(){
+//        UIActivityIndicatorView().stopAnimating()
+//    }
 }
 
 /*
