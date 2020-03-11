@@ -11,7 +11,7 @@ s.summary = "A short description of TplInsurancePodUpdated."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.22"
+s.version = "0.1.23"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -27,7 +27,7 @@ s.source = { :git => "https://github.com/tplinsurance/TplInsurancePodUpdated.git
 
 # 7
 s.framework = "UIKit"
-s.dependency 'Alamofire', '~> 4.7'
+s.dependency 'Alamofire', '~> 5.0.2'
 s.dependency 'SkyFloatingLabelTextField', '~> 3.0'
 s.dependency 'TrustKit', '~> 1.6.0'
 
