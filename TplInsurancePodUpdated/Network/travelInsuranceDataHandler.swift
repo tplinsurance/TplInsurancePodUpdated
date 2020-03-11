@@ -78,7 +78,7 @@ class travelInsuranceDataHandler{
     
     func fetchAndUpdateCities(completionHandler: @escaping (Bool) -> Void) {
         let url = URL(string: UrlConstants.Helper.getCities)!
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
             if let data = response.data,
                 let cities = City.decodeJsonData(data: data) {
                 self.cities = cities
@@ -91,7 +91,7 @@ class travelInsuranceDataHandler{
     
     func TIGetRelationship(completionHandler: @escaping (Bool) -> Void) {
         let url = URL(string: UrlConstants.TravelInusrance.GetRelationship)!
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
             if let data = response.data,
                 let relationship = TIGetRelationshipModel.decodeJsonData(data: data) {
                 self.Relationships = relationship
@@ -105,7 +105,7 @@ class travelInsuranceDataHandler{
     
     func TIGetTravelRelationship(completionHandler: @escaping (Bool) -> Void) {
         let url = URL(string: UrlConstants.TravelInusrance.GetTravelRelationship)!
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
             if let data = response.data,
                 let relationship = TIGetRelationshipModel.decodeJsonData(data: data) {
                 self.TravelRelationships = relationship
@@ -120,7 +120,7 @@ class travelInsuranceDataHandler{
     func TITravelType(completionHandler: @escaping (Bool) -> Void) {
         let url = URL(string: UrlConstants.TravelInusrance.GetTravelType)!
         print(HeaderClass.shared.getAuthorizedHeader())
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
             if let data = response.data,
                 let travelType = TITravelTypeModel.decodeJsonData(data: data) {
                 self.travelType = travelType
@@ -134,7 +134,7 @@ class travelInsuranceDataHandler{
     
     func TIDestination(completionHandler: @escaping (Bool) -> Void) {
         let url = URL(string: UrlConstants.TravelInusrance.GetTravelDestination)!
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
             if let data = response.data,
                 let destination = TIDestinationModel.decodeJsonData(data: data) {
                 self.destinationArray = destination
@@ -151,7 +151,7 @@ class travelInsuranceDataHandler{
         let url = URL(string: UrlConstants.TravelInusrance.GetTravelAgeSlab)!
         let param: [String:Any] = ["TravelType": TravelType]
         
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
             if let data = response.data,
                 let ageSlab = TIAgeSlabModel.decodeJsonData(data: data) {
                 self.ageSlabArray = ageSlab
@@ -183,7 +183,7 @@ class travelInsuranceDataHandler{
                                    "Email": Email]
         
         print("Get Travel Quote Params:  \(param)")
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON { (response) in
             if let data = response.data{
                 if let quoteData = TIQuoteModel.decodeJsonData(data: data){
                     print("response is \(quoteData)")
@@ -219,7 +219,7 @@ class travelInsuranceDataHandler{
 
         print(param)
 
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON { (response) in
             if let data = response.data{
                 let TIPackage = TravelPackageModel.decodeJsonData(data: data)
                 print("response is \(TIPackage)")
@@ -247,7 +247,7 @@ class travelInsuranceDataHandler{
                 "Quote_Id" : String(describing: quoteId) ]
             
             print(params)
-            YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+            YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
                 
                 if let data = response.data{
                     let result = InsuranceProposalModel.decodeJsonData(data: data)

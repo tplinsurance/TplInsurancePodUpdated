@@ -11,9 +11,9 @@ import Alamofire
 import TrustKit
 
 class CustomSessionDelegate: SessionDelegate {
-    
+    /*
     // Note that this is the almost the same implementation as in the ViewController.swift
-    override init() {
+    init() {
         super.init()
         
         // Alamofire uses a block var here
@@ -104,7 +104,7 @@ class CustomSessionDelegate: SessionDelegate {
         return publicKey
     }
 
-    override func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         // Call into TrustKit here to do pinning validation
         if TrustKit.sharedInstance().pinningValidator.handle(challenge, completionHandler: completionHandler) == false {
             // TrustKit did not handle this challenge: perhaps it was not for server trust
@@ -112,4 +112,5 @@ class CustomSessionDelegate: SessionDelegate {
             completionHandler(.performDefaultHandling, nil)
         }
     }
+ */
 }

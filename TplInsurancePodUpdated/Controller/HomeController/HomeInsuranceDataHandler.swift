@@ -44,7 +44,7 @@ class HomeInsuranceDataHandler{
 //    var finjaPaymentData: [FinjaAuthenticationModel]?
     var HIresult: [InsuranceProposalModel]?
     
-    var sessionManager = SessionManager()
+    var sessionManager = Session()
     let customSessionDelegate = CustomSessionDelegate()
     
     var selectedHomePackageDetail: HomeInsurancePackageDetailModel?
@@ -103,7 +103,7 @@ class HomeInsuranceDataHandler{
 //        }
 
         
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader()) ).responseJSON(completionHandler: { (response) in
             if let data = response.data,
                 let packages = homeInsuranceModel.decodeJsonData(data: data) {
                 self.homePackages = packages
@@ -124,7 +124,7 @@ class HomeInsuranceDataHandler{
         let param: [String:Any] = ["Name": Name,"SumInsured": SumInsured]
         
         print(param)
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON { (response) in
             if let data = response.data{
                 let HIDetails = HomeInsurancePackageDetailModel.decodeJsonData(data: data)
                 self.homePackagesDetail = HIDetails
@@ -145,7 +145,7 @@ class HomeInsuranceDataHandler{
         
         print(param)
         
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON { (response) in
             if let data = response.data{
                 let HIDetails = HomeInsurancePackageDetailModel.decodeJsonData(data: data)
                 
@@ -164,7 +164,7 @@ class HomeInsuranceDataHandler{
         let url = URL(string: UrlConstants.MobileInusrance.getMobilePackages)!
         
         let param: [String:Any] = ["Name": "Name","SumInsured": "0"]
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
             
             if let data = response.data,
                 let packages = HomeInsurancePackageDetailModel.decodeJsonData(data: data) {
@@ -205,7 +205,7 @@ class HomeInsuranceDataHandler{
         print(param)
         print(url)
         //        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default).responseJSON(completionHandler: { (response) in
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON { (response) in
             if let data = response.data{
                 if let quoteData = HIQuoteModel.decodeJsonData(data: data){
                     print("response is \(quoteData)")
@@ -235,7 +235,7 @@ class HomeInsuranceDataHandler{
             let params: [String:Any] = ["QuoteID" : String(describing: quoteId)]
             
             print(params)
-            YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+            YSessionManager.sharedInstance.apiManager()?.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
                 
                 if let data = response.data{
                     let result = InsuranceProposalModel.decodeJsonData(data: data)
@@ -286,7 +286,7 @@ class HomeInsuranceDataHandler{
     
     func fetchAndUpdateCities(completionHandler: @escaping (Bool) -> Void) {
         let url = URL(string: UrlConstants.Helper.getCities)!
-        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+        YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
             if let data = response.data,
                 let cities = City.decodeJsonData(data: data) {
                 self.cities = cities
@@ -302,7 +302,7 @@ class HomeInsuranceDataHandler{
         if let city = city , city.Name != TIPlaceHolders.citySelection {
             let urlString = UrlConstants.Helper.getAreas.replacingOccurrences(of: "{CityId}", with: String(city.Id))
             let url = URL(string: urlString)!
-            YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HeaderClass.shared.getAuthorizedHeader()).responseJSON(completionHandler: { (response) in
+            YSessionManager.sharedInstance.apiManager()?.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HTTPHeaders(HeaderClass.shared.getAuthorizedHeader())).responseJSON(completionHandler: { (response) in
                 if let data = response.data,
                     let areas = Area.decodeJsonData(data: data) {
                     self.areas = areas
@@ -322,7 +322,7 @@ class HomeInsuranceDataHandler{
         if let city = city , city.Name != TIPlaceHolders.citySelection {
             let urlString = UrlConstants.finja.Authentication.replacingOccurrences(of: "{MobileNo}", with: "923452391595")
             let url = URL(string: urlString)!
-            let manager = Alamofire.SessionManager.default
+            let manager = Alamofire.Session.default
             manager.session.configuration.timeoutIntervalForRequest = 120
             
             manager.request(url, method: .get, parameters: nil).responseJSON(completionHandler: { (response) in
@@ -350,8 +350,7 @@ class HomeInsuranceDataHandler{
         
         print(param)
         print(url)
-        
-        Alamofire.request(url, method: .post, parameters: param, encoding: JSONEncoding.default).responseJSON { (response) in
+        AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default).responseJSON { (response) in
             if let data = response.data{
                 if let token = GenerateToken.decodeJsonData(data: data){
                     print("response is \(token)")
@@ -392,7 +391,7 @@ class HomeInsuranceDataHandler{
         print("headers :\(headers)")
         print("param :\(param)")
         
-        Alamofire.request(url, parameters: param, headers: ["Securelogin": "\(String(describing: token))"]).responseJSON() { response in
+        AF.request(url, parameters: param, headers: ["Securelogin": "\(String(describing: token))"]).responseJSON() { response in
             
             if let data = response.data{
                 if let PolicyAmount = GetAmountOfPolicyModel.decodeJsonData(data: data){
@@ -428,7 +427,7 @@ class HomeInsuranceDataHandler{
         
         print(param)
         print(url)
-        Alamofire.request(url, method: .post, parameters: param, encoding: JSONEncoding.default).responseJSON { (response) in
+        AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default).responseJSON { (response) in
             if let data = response.data{
                 if let quoteData = HIQuoteModel.decodeJsonData(data: data){
                     print("response is \(quoteData)")
