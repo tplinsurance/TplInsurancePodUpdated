@@ -269,7 +269,6 @@ class travelInsuranceDataHandler{
 //                        self.result = value as! String
 //                        print("Result Value  : "+(value as! String))
 //                        completionHandler(true, self.result ?? "")
-//
 //                    }
 //                    else{
 //                        completionHandler(false, self.result ?? "")
